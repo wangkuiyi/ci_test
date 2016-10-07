@@ -1,1 +1,2 @@
-true
+go get -u ./...
+go run example.go
