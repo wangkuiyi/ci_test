@@ -5,4 +5,5 @@ ln -sf `pwd`/ci_test $GOPATH/src/github.com/wangkuiyi/ci_test
 cd $GOPATH/src/github.com/wangkuiyi/ci_test
 
 echo GOPATH=$GOPATH go get -u ./...
-GOPATH=$GOPATH go get ./... # Don't use -u
+go get -t ./... # Don't use -u
+go test ./...

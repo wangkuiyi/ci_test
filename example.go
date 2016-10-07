@@ -7,8 +7,13 @@ import (
 	"github.com/topicai/candy"
 )
 
-func main() {
+// CurrentDir returns the current directory.
+func CurrentDir() string {
 	dir, e := os.Getwd()
 	candy.Must(e)
-	fmt.Println(dir)
+	return dir
+}
+
+func main() {
+	fmt.Println(CurrentDir)
 }
