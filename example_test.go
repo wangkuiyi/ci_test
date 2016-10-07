@@ -10,3 +10,7 @@ import (
 func TestCurrentDir(t *testing.T) {
 	assert.True(t, strings.HasSuffix(CurrentDir(), "src/github.com/wangkuiyi/ci_test"))
 }
+
+func TestMustFail(t *testing.T) {
+	assert.False(t, true)
+}
